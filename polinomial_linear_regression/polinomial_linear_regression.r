@@ -24,7 +24,6 @@ summary(polinomial_regressor)
 # Increase dataset for visualization
 x_grid = seq(min(dataset$Level), max(dataset$Level), 0.1)
 
-
 # Visualize linear
 library(ggplot2)
 pred_linear = predict(linear_regressor, newdata = data.frame(Level = x_grid))
