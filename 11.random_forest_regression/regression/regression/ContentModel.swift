@@ -27,7 +27,7 @@ extension ContentModel {
             let levels = dataTable["Level"] as MLDataColumn<Int>
 
             // Fit SL Regressor with training set
-            let regressor = try MLDecisionTreeRegressor(trainingData: dataTable, targetColumn: "Salary")
+            let regressor = try MLRandomForestRegressor(trainingData: dataTable, targetColumn: "Salary")
             print(regressor.trainingMetrics)
 
             // Predict results
